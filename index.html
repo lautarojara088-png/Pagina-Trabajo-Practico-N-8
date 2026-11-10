@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca-Cola | Tienda online</title>
+    <link rel="shortcut icon" href="img/0-7229_coca-cola-logo-coca-cola.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a class="marca" href="#inicio">
+                <i class="fa-solid fa-bottle-droplet"></i>Coca-Cola
+            </a>
+
+            <button type="button" id="boton-menu" class="menu-boton" aria-label="Abrir menú"
+                aria-controls="menu-principal" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul id="menu-principal">
+                <li><a aria-current="page" href="#inicio"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                <li><a href="#sobre-nosotros"><i class="fa-solid fa-circle-info"></i>Sobre nosotros</a></li>
+                <li><a href="#catalogo"><i class="fa-solid fa-store"></i>Catálogo</a></li>
+                <li><a href="#contacto"><i class="fa-solid fa-envelope"></i>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="portada">
+            <h1>Tus Coca-Cola favoritas, bien frías y en tu puerta</h1>
+            <p>Latas y botellas en versión original, zero y light, además de ediciones especiales.</p>
+            <a class="enlace-boton" href="#catalogo">Ver catálogo</a>
+        </section>
+
+        <section id="sobre-nosotros" class="fondo-blanco">
+            <h2>Sobre nosotros</h2>
+            <p class="destacado">Somos una tienda online dedicada a la venta de bebidas Coca-Cola. Vendemos
+                latas y botellas en sus versiones original, zero y light, además de ediciones especiales
+                con sabor a café, limón, cereza y vainilla.</p>
+            <ul class="caracteristicas">
+                <li>
+                    <i class="fa-solid fa-truck-fast fa-2x"></i>
+                    <h3>Envío a domicilio</h3>
+                    <p>Te llevamos tu pedido hasta la puerta de tu casa.</p>
+                </li>
+                <li>
+                    <i class="fa-regular fa-snowflake fa-2x"></i>
+                    <h3>Siempre bien fría</h3>
+                    <p>Cuidamos que llegue fresquita a tu mesa.</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-gift fa-2x"></i>
+                    <h3>Para compartir</h3>
+                    <p>Pedí por cantidad para tus juntadas y cumpleaños.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="catalogo">
+            <h2>Catálogo de productos</h2>
+            <input type="search" id="buscador" placeholder="Buscar producto..." aria-label="Buscar producto">
+            <div class="productos">
+
+                <article>
+                    <img src="img/coca-cola-lata.png" alt="Pack de latas de Coca-Cola original" loading="lazy">
+                    <span class="etiqueta">Lata</span>
+                    <h3>Coca-Cola Lata</h3>
+                    <p>El sabor original en lata de 354 ml, ideal para llevar.</p>
+                    <p class="precio">$ 1.800</p>
+                    <button type="button" class="comprar">
+                        <i class="fa-solid fa-cart-plus"></i>Añadir al carrito
+                    </button>
+                </article>
+
+                <article>
+                    <img src="img/coca-cola-plastico.png" alt="Botella de plástico de Coca-Cola" loading="lazy">
+                    <span class="etiqueta">Botella plástico</span>
+                    <h3>Coca-Cola Plástico</h3>
+                    <p>La botella de siempre, práctica y liviana para compartir.</p>
+                    <p class="precio">$ 2.500</p>
+                    <button type="button" class="comprar">
+                        <i class="fa-solid fa-cart-plus"></i>Añadir al carrito
+                    </button>
+                </article>
+
+                <article>
+                    <img src="img/coca-cola-vidrio.png" alt="Botella de vidrio de Coca-Cola" loading="lazy">
+                    <span class="etiqueta">Botella vidrio</span>
+                    <h3>Coca-Cola Vidrio</h3>
+                    <p>La clásica botella de vidrio, con el sabor de toda la vida.</p>
+                    <p class="precio">$ 2.200</p>
+                    <button type="button" class="comprar">
+                        <i class="fa-solid fa-cart-plus"></i>Añadir al carrito
+                    </button>
+                </article>
+
+                <article>
+                    <img src="img/coca-cola-zero-lata.png" alt="Lata de Coca-Cola Zero" loading="lazy">
+                    <span class="etiqueta">Lata</span>
+                    <h3>Coca-Cola Zero Lata</h3>
+                    <p>Gran sabor y cero azúcar, en lata.</p>
+                    <p class="precio">$ 1.900</p>
+                    <button type="button" class="comprar">
+                        <i class="fa-solid fa-cart-plus"></i>Añadir al carrito
+                    </button>
+                </article>
+
+                <article>
+                    <img src="img/coca-cola-zero-botella.png" alt="Botella de Coca-Cola Zero azúcar sabor vainilla" loading="lazy">
+                    <span class="etiqueta">Botella</span>
+                    <h3>Coca-Cola Zero Botella</h3>
+                    <p>Cero azúcar en botella grande, para compartir en la mesa.</p>
+                    <p class="precio">$ 3.800</p>
+                    <button type="button" class="comprar">
+                        <i class="fa-solid fa-cart-plus"></i>Añadir al carrito
+                    </button>
+                </article>
+
+                <article>
+                    <img src="img/coca-cola-light-lata.png" alt="Lata de Coca-Cola Light" loading="lazy">
+                    <span class="etiqueta">Lata</span>
+                    <h3>Coca-Cola Light Lata</h3>
+                    <p>Versión liviana y refrescante, en una lata estilizada.</p>
+                    <p class="precio">$ 1.900</p>
+                    <button type="button" class="comprar">
+                        <i class="fa-solid fa-cart-plus"></i>Añadir al carrito
+                    </button>
+                </article>
+
+                <article>
+                    <img src="img/coca-cola-light-botella.png" alt="Botella de Coca-Cola Light de 1 litro" loading="lazy">
+                    <span class="etiqueta">Botella</span>
+                    <h3>Coca-Cola Light Botella</h3>
+                    <p>El mismo sabor light en botella de 1 litro.</p>
+                    <p class="precio">$ 3.200</p>
+                    <button type="button" class="comprar">
+                        <i class="fa-solid fa-cart-plus"></i>Añadir al carrito
+                    </button>
+                </article>
+
+                <article>
+                    <img src="img/coca-cola-espresso.png" alt="Lata de Coca-Cola con café espresso" loading="lazy">
+                    <span class="etiqueta">Edición especial</span>
+                    <h3>Café Espresso Coca-Cola</h3>
+                    <p>Coca-Cola con café: más cafeína, en lata de 220 ml.</p>
+                    <p class="precio">$ 2.400</p>
+                    <button type="button" class="comprar">
+                        <i class="fa-solid fa-cart-plus"></i>Añadir al carrito
+                    </button>
+                </article>
+
+                <article>
+                    <img src="img/coca-cola-lemon.png" alt="Lata de Coca-Cola Lemon" loading="lazy">
+                    <span class="etiqueta">Edición especial</span>
+                    <h3>Coca-Cola Lemon</h3>
+                    <p>El sabor de siempre con un toque cítrico de limón.</p>
+                    <p class="precio">$ 2.300</p>
+                    <button type="button" class="comprar">
+                        <i class="fa-solid fa-cart-plus"></i>Añadir al carrito
+                    </button>
+                </article>
+
+                <article>
+                    <img src="img/coca-cola-cereza.png" alt="Lata de Coca-Cola Cereza" loading="lazy">
+                    <span class="etiqueta">Edición especial</span>
+                    <h3>Coca-Cola Cereza</h3>
+                    <p>Coca-Cola con sabor a cereza, dulce y diferente.</p>
+                    <p class="precio">$ 2.300</p>
+                    <button type="button" class="comprar">
+                        <i class="fa-solid fa-cart-plus"></i>Añadir al carrito
+                    </button>
+                </article>
+
+                <article>
+                    <img src="img/coca-cola-vainilla.png" alt="Lata de Coca-Cola Vainilla" loading="lazy">
+                    <span class="etiqueta">Edición especial</span>
+                    <h3>Coca-Cola Vainilla</h3>
+                    <p>Suave y cremosa: Coca-Cola con sabor a vainilla.</p>
+                    <p class="precio">$ 2.300</p>
+                    <button type="button" class="comprar">
+                        <i class="fa-solid fa-cart-plus"></i>Añadir al carrito
+                    </button>
+                </article>
+
+                <article>
+                    <img src="img/coca-cola-jack-daniels.png" alt="Lata de Jack Daniel's con Coca-Cola" loading="lazy">
+                    <div class="etiquetas">
+                        <span class="etiqueta">Lata</span>
+                        <span class="etiqueta adultos">Solo +18</span>
+                    </div>
+                    <h3>Jack Daniel's &amp; Coca-Cola</h3>
+                    <p>Whiskey Tennessee con Coca-Cola, lata de 350 ml y 5% de alcohol.
+                        Consumo responsable.</p>
+                    <p class="precio">$ 4.500</p>
+                    <button type="button" class="comprar">
+                        <i class="fa-solid fa-cart-plus"></i>Añadir al carrito
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contacto" class="fondo-blanco">
+            <h2>Contacto</h2>
+            <form id="formulario-contacto">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" placeholder="nombre@ejemplo.com" required>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" rows="4" placeholder="Contanos qué querés pedir" required></textarea>
+                </div>
+                <button type="submit">
+                    <i class="fa-solid fa-paper-plane"></i>Enviar mensaje
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-marca">
+                <p>Coca-Cola</p>
+                <p>Tienda online de bebidas</p>
+            </div>
+            <div>
+                <p><i class="fa-solid fa-envelope"></i>contacto@tienda-ejemplo.com</p>
+                <p><i class="fa-solid fa-phone"></i>+54 0800-888-8888</p>
+                <p><i class="fa-solid fa-location-dot"></i>Luis Viale 2045.</p>
+            </div>
+            <div class="redes">
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <hr>
+        <p class="copy">&copy; 2026 Tienda Coca-Cola. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
